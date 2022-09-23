@@ -1,0 +1,9 @@
+   public String[] arrayStringfuse(String [] firstArray, String [] secondArray){
+        int firLength=firstArray.length;
+        int secLength= secondArray.length;
+        String [] result=new String [firLength+secLength];
+
+        System.arraycopy(firstArray,0,result,0,firLength);
+        System.arraycopy(secondArray,0,result,firLength,secLength);
+        return result;
+    }
